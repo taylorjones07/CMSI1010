@@ -11,20 +11,19 @@ def show_all_animals():
     print("• Arno the Alligator 🐊")
 
 def pet_animal(animal):
-    if animal == "Clover":
+    if animal == "clover":
         print("Clover is so happy! ❤️")
-    elif animal =="Coco":
+    elif animal =="coco":
         print("Coco the Baby Goat thanks you! 🥰")
-    elif animal == "Arno":
+    elif animal == "arno":
         print("Actually, we cannot allow you to pet Arno. ⛔️")
     else:
         print("Sorry, I don't know that animal")
 
-
 print("Welcome to the Petting Zoo!")
 print("Type 'help' to get a list of all the things you can do")
 print()
-response = input("What would you like to do?")
+response = input("What would you like to do?").strip().lower()
 if response == "help":
     show_help()
 elif response == "see":
@@ -39,16 +38,16 @@ else:
 
 keep_going = True
 while keep_going:
-    response = input("What would you like to do? ")
+    response = input("What would you like to do? ").strip().lower()
     if response == "help":
         show_help()
     elif response == "see":
         show_all_animals()
     elif response.startswith("pet "):
-        animal = response[4:]
+        animal = response[4:].strip()
         pet_animal(animal)
     elif response == "bye":
         print("Goodbye!")
-        keep_going = False
+        break
     else:
         print("Sorry, I don't understand that command.")
