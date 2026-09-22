@@ -9,6 +9,7 @@ def show_all_animals():
     print("• Clover the Bunny 🐇")
     print("• Coco the Baby Goat 🐐")
     print("• Arno the Alligator 🐊")
+    print("• Scab the Spider 🕷️")
 
 def pet_animal(animal):
     if animal == "clover":
@@ -17,6 +18,8 @@ def pet_animal(animal):
         print("Coco the Baby Goat thanks you! 🥰")
     elif animal == "arno":
         print("Actually, we cannot allow you to pet Arno. ⛔️")
+    elif animal == "scab":
+        print("Scab let's you, but his mood doesn't change. 😐")
     else:
         print("Sorry, I don't know that animal")
 
