@@ -19,7 +19,7 @@ def pet_animal(animal):
     elif animal == "arno":
         print("Actually, we cannot allow you to pet Arno. ⛔️")
     elif animal == "scab":
-        print("Scab let's you, but his mood doesn't change. 😐")
+        print("Scab lets you, but his mood doesn't change. 😐")
     else:
         print("Sorry, I don't know that animal")
 
