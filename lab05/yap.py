@@ -19,7 +19,7 @@ template = """
 
 def random_sentence():
     sentence = []
-    for token in template.split():
+    for token in random.choice(template).split():
         if token in words:
             sentence.append(random.choice(words[token]))
         else:
